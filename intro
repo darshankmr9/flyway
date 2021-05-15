@@ -1,0 +1,19 @@
+matadata table
+SQL file is called V1__create_database
+V followed by the version number. two underscore and the short discription.
+So the file contains the SQL statements for database version 1 and Flyway will store it with description "create_database" in the SCHEMA_VERSION table.
+conf and SQL
+Flyway processes all SQL files located in the SQL folder.
+sql folder : V1 _ _ create_database.sql
+conf folder : flyway.conf
+fyway.url : JDBC URL. which flyway shall use to connect to the database
+flyway.user
+flyway.password
+flyway migrate
+java integration : Add flyway-core.jar
+
+<dependency>
+<groupId>org.flywaydb</groupId>
+<artifactId>flyway-core</artifactId>
+<Version>4.2.0</Version>
+</dependency>
